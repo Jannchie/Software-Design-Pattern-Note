@@ -32,14 +32,14 @@
 
 我们首先考虑不使用工厂的情况：
 
-<!-- 不使用工厂的类图 -->
+![不使用工厂模式的类图](https://github.com/Jannchie/Software-Design-Pattern-Note/blob/master/Pattern%201%20Factory%20Method%20Design%20pattern/1-1.png?raw=true "不使用工厂模式的类图")
 
 同样以汽车为例，汽车（Car）属于一个超类，它分别拥有三个子类：Lincoln、Cadillac和Buick。如果没有工厂，那么，创建汽车的的代码将会写在客户（Client）中，并且需要冗长的判断来确定究竟要创建哪一辆汽车。
 
 为了能够屏蔽创建汽车的具体实现细节、增强扩展性、增强模块之间的独立性，我们需要实现一个汽车工厂类来进行汽车的创建。
 
-<!-- 使用工厂的类图 -->
-![Alt text](//1-1 "optional title")
+![改写为使用工厂模式](https://github.com/Jannchie/Software-Design-Pattern-Note/blob/master/Pattern%201%20Factory%20Method%20Design%20pattern/1-2.png?raw=true "改写为使用工厂模式")
+
 
 工厂类一共实现了如下几个功能：
 
@@ -57,4 +57,4 @@
 
 ## 结语
 
-工厂模式是一种非常常用的设计模式。
+工厂模式是一种非常常用的设计模式。在较为小型的项目中可能体会不到工厂模式的优点。但是一旦项目扩大，工厂模式就成为一种必不可少的创建实例的方式。正如工业革命建造了无数工厂极大地提高了生产力，从而使大批量生产工业产品变得可能一样，工厂模式的出现使得软件系统的扩展性更强，可维护性更高，因此使得管理庞大的项目变得可能。
