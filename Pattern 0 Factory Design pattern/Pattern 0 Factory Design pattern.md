@@ -42,13 +42,13 @@
 
 我们首先考虑不使用工厂的情况：
 
-![不使用工厂模式的类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/1-1.png "不使用工厂模式的类图")
+![不使用工厂模式的类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/0-1.png "不使用工厂模式的类图")
 
 同样以汽车为例，汽车（Car）属于一个超类，它分别拥有三个子类：Lincoln、Cadillac和Buick。如果没有工厂，那么，创建汽车的的代码将会写在客户（Client）中，并且需要冗长的判断来确定究竟要创建哪一辆汽车。
 
 为了能够屏蔽创建汽车的具体实现细节、增强扩展性、增强模块之间的独立性，我们需要实现一个汽车工厂类来进行汽车的创建。
 
-![改写为使用工厂模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/1-2.png "改写为使用工厂模式")
+![改写为使用工厂模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/0-2.png "改写为使用工厂模式")
 
 
 工厂类一共实现了如下几个功能：
