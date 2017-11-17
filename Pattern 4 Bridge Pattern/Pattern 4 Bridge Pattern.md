@@ -1,4 +1,4 @@
-# Pattern 3: Bridge Pattern  桥接模式
+# Pattern 4: Bridge Pattern  桥接模式
 
 ## Summary——概述
 
@@ -16,7 +16,7 @@
 
 传统情况下，当一个类有多个变化因素的时候，我们会考虑使用多个继承：
 
-<!-- 4-1 -->
+！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-1.png)
 
 此时这个模型可以看出能够满足开闭原则。但是却做不到单一职责原则：此时饮品类中含有两类变量，也就是有两类变化的因素。在这种情况下，如果需要添加一种饮品，则需要同时在两种规格的饮料下添加多个类，造成类数量的膨胀。况且不同规格的饮料由于饮料类型相同所以处理工序也比较类似，如此处理必会造成系统中存在许多冗余的代码。因此我们希望对其进行分离。这个时候，就需要桥接模式。
 
@@ -24,15 +24,15 @@
 
 使用桥接的模式类图如下：
 
-<!-- 4-2 -->
+！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-2.png)
 
 上图可以看出，抽象类与实现的接口属于“Has-a”关系。即抽象类拥有一个实现的接口。在这种情况下，就可以做到抽象与实现的分离。不仅可以添加各种各样不同的具体实现，也可以增加多种原来抽象类的子类，这两种变化不会互相干扰各自实现。
 
 应用到前述的奶茶系统中，类图修改如下：
 
-<!-- 4-3 -->
+！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-3.png)
 
-#### 使用适配器的优点
+### 使用适配器的优点
 
 - 分离抽象接口及其实现部分。提出了比继承更好的解决方案。
 
