@@ -24,13 +24,13 @@
 
 使用桥接的模式类图如下：
 
-！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-2.png)
+！[图4-2 桥接模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-2.png)
 
 上图可以看出，抽象类与实现的接口属于“Has-a”关系。即抽象类拥有一个实现的接口。在这种情况下，就可以做到抽象与实现的分离。不仅可以添加各种各样不同的具体实现，也可以增加多种原来抽象类的子类，这两种变化不会互相干扰各自实现。
 
 应用到前述的奶茶系统中，类图修改如下：
 
-！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-3.png)
+！[图4-3 奶茶类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-3.png)
 
 ### 使用适配器的优点
 
