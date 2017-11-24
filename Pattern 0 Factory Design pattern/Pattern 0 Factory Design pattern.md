@@ -10,7 +10,7 @@
 
 ##### When——何时使用工厂模式
 
-作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂模式。有一点需要注意的地方就是复杂对象适合使用工厂模式，而简单对象，特别是只需要通过 new 就可以完成创建的对象，无需使用工厂模式。如果使用工厂模式，就需要引入一个工厂类，会增加系统的复杂度。
+作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂方法模式。有一点需要注意的地方就是复杂对象适合使用工厂模式，而简单对象，特别是只需要通过 new 就可以完成创建的对象，无需使用工厂模式。如果使用工厂模式，就需要引入一个工厂类，会增加系统的复杂度。
 
 ---
 
@@ -42,13 +42,13 @@
 
 我们首先考虑不使用工厂的情况：
 
-![不使用工厂模式的类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/0-1.png "不使用工厂模式的类图")
+![不使用工厂模式的类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%200%20Factory%20Design%20pattern/0-1.png "不使用工厂模式的类图")
 
 同样以汽车为例，汽车（Car）属于一个超类，它分别拥有三个子类：Lincoln、Cadillac和Buick。如果没有工厂，那么，创建汽车的的代码将会写在客户（Client）中，并且需要冗长的判断来确定究竟要创建哪一辆汽车。
 
 为了能够屏蔽创建汽车的具体实现细节、增强扩展性、增强模块之间的独立性，我们需要实现一个汽车工厂类来进行汽车的创建。
 
-![改写为使用工厂模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%201%20Factory%20Method%20Design%20pattern/0-2.png "改写为使用工厂模式")
+![改写为使用工厂模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%200%20Factory%20Design%20pattern/0-2.png "改写为使用工厂模式")
 
 
 工厂类一共实现了如下几个功能：
