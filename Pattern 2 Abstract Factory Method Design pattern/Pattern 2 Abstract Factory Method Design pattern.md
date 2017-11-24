@@ -26,7 +26,11 @@
 
 具体的实现类图如下所示：
 
+<center>
+
 ![图2-1 实现抽象工厂设计模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%202%20Abstract%20Factory%20Method%20Design%20pattern/2-1.png )
+
+</center>
 
 ### 抽象工厂设计模式的缺吃、
 抽象工厂设计模式虽然能够更好的处理多个对象的实例化过程，但使用它也暴露出一些缺陷：

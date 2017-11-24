@@ -16,7 +16,11 @@
 
 传统情况下，当一个类有多个变化因素的时候，我们会考虑使用多个继承：
 
+<center>
+
 ！[图4-1 传统继承](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-1.png)
+
+</center>
 
 此时这个模型可以看出能够满足开闭原则。但是却做不到单一职责原则：此时饮品类中含有两类变量，也就是有两类变化的因素。在这种情况下，如果需要添加一种饮品，则需要同时在两种规格的饮料下添加多个类，造成类数量的膨胀。况且不同规格的饮料由于饮料类型相同所以处理工序也比较类似，如此处理必会造成系统中存在许多冗余的代码。因此我们希望对其进行分离。这个时候，就需要桥接模式。
 
@@ -30,7 +34,11 @@
 
 应用到前述的奶茶系统中，类图修改如下：
 
+<center>
+
 ！[图4-3 奶茶类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%204%20Bridge%20Pattern/4-3.png)
+
+</center>
 
 ### 使用适配器的优点
 

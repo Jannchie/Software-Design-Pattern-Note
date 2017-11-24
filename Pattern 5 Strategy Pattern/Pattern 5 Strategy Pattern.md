@@ -12,13 +12,21 @@
 
 最直接的实现这种选择策略的模式如下：
 
+<center>
+
 ![图5-1 传统策略](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%205%20Strategy%20Pattern/5-1.png)
+
+</center>
 
 上述的模式明显非常简单不做作。算是只用了一个类，把所有的策略列举成不同的方法放在Sort类中。当然了，这样模式看一眼就知道问题极大，首先就不满足开闭原则，并且需要许多的判断语句来确保选择了正确的算法。
 
 所以我们采用策略模式：
 
+<center>
+
 ![图5-2 策略模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%205%20Strategy%20Pattern/5-2.png)
+
+</center>
 
 策略模式通过一个接口，将每一个算法封装成为一个类。使用时，只需要调用子类的sort方法即可进行策略的选择。
 

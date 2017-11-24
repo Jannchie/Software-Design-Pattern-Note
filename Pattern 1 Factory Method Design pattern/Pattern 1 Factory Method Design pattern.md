@@ -18,7 +18,11 @@
 
 对简单工厂模式进行修改如下：
 
+<center>
+
 ![图1-1 修改工厂模式为工厂方法模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/e09b3b46b7ab9550f5c0b05fd9856786728349bb/Pattern%201%20Factory%20Method%20Design%20pattern/1-1.png "图1-1 修改工厂模式为工厂方法模式")
+
+</center>
 
 在这里，原先的工厂类成为了一个接口，而每一个产品的具体实现放在了继承这个接口的具体工厂中。每一个具体的工厂生产一种产品。
 

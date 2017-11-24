@@ -28,7 +28,11 @@
 
 一个简单的对象适配器的类图如下所示：
 
-  ![对象适配器类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%203%20The%20Adapter%20Pattern/3-1.png)
+<center>
+
+![对象适配器类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%203%20The%20Adapter%20Pattern/3-1.png)
+
+</center>
 
 上述类图虽然简单，但是这些类的关系也还是比较复杂的，下面我们来讨论一下如何理解他们之间的关系：
 
@@ -47,7 +51,11 @@
 
 还有一种适配器叫做类适配器。类图如下：
 
-  ![类适配器类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%203%20The%20Adapter%20Pattern/3-2.png)
+<center>
+
+![类适配器类图](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%203%20The%20Adapter%20Pattern/3-2.png)
+
+</center>
 
 对比可以看出，对象适配器使用的是组合，类适配器使用的是继承。由于在java中不允许多重继承，所以不会出现，但是在例如C++的可以多重继承的语言中，这种类适配器可能有用。
 
