@@ -15,45 +15,30 @@
 
 <center>
 
-![图5-1 传统策略](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%205%20Strategy%20Pattern/5-1.png)
+![图6-1 图书状态模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%206%20State%20Pattern/6-1.png)
 
 </center>
 
-上述的模式明显非常简单不做作。算是只用了一个类，把所有的策略列举成不同的方法放在Sort类中。当然了，这样模式看一眼就知道问题极大，首先就不满足开闭原则，并且需要许多的判断语句来确保选择了正确的算法。
-
-所以我们采用策略模式：
-
-<center>
-
-![图5-2 策略模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%205%20Strategy%20Pattern/5-2.png)
-
-</center>
-
-策略模式通过一个接口，将每一个算法封装成为一个类。使用时，只需要调用子类的sort方法即可进行策略的选择。
+上述的模型就是采用状态模式的UML类图。图书可以拥有一个状态的接口，从而可以实现不同状态下的不同功能。当图书没被借走时，状态为notBorrowed，此时可以实现借书borrowTheBook的方法。而当图书被借走后，可以实现returnTheBook的方法。
 
 ---
 
-### Why——为什么要使用策略模式
+### Why——为什么要使用状态模式
 
-使用策略模式的优点是显而易见的：
+抽象上述的类图，使其一般化：
 
-- 完成同一类操作的算法可以自由切换
-- 避免使用难以维护的多种条件判断
-- 符合开闭原则，扩展性良好
+![图6-2 图书状态模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%206%20State%20Pattern/6-2.png)
 
----
+可以看出状态模式的优点：
 
-### Disadvantage——策略模式的缺点
+- 状态模式使得对象的行为依赖于它的状态（属性），并且可以根据它的状态改变而改变它的相关行为。
+- 当操作带有大量与状态相关的、多部分的条件语句时，使用状态模式能够轻松地组织起来。
+- 客户对象先创建一个具体的状态类的对象，然后，在创建Context对象的时候，通过参数传递给Context对象。此后，客户程序就不必与该状态对象直接交互。
+- 可扩展性好，当要修改某个状态子类的时候，不需要修改客户类与Context类；当要添加一个新的状态子类的时候，不需要修改客户类与Context类，只需要少许修改状态子类的changeState方法。
 
-当然策略模式也不是完美的，它有着如下的缺点：
-
-- 客户端必须知道策略模式的方法，即策略模式的方法要对外暴露。
-- 策略类会增加类的数量，造成类的膨胀。
-
-因此，如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。
 
 ---
 
-### 结语
+### Disadvantage——状态模式的缺点
 
-策略模式是一种简单有效且实用的设计模式。它提供了一种从多种同样功能的方法中选择其一的操作，并且易于维护。策略模式让算法独立于使用它的客户而独立变化，从而可以取消自顶向下的依赖。
+当然策略模式也不是完美的，主要的缺点在于：状态模式对"开闭原则"的支持并不太好，对于可以切换状态的状态模式，增加新的状态类需要修改那些负责状态转换的源代码，否则无法切换到新增状态，而且修改某个状态类的行为也需修改对应类的源代码。

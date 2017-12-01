@@ -1,4 +1,4 @@
-## Pattern 1 ： Factory Method Design pattern 工厂设计模式
+### Pattern 1 ： Factory Method Design pattern 工厂设计模式
 
 #### Summary——概述
 
