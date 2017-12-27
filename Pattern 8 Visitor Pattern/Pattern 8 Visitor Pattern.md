@@ -12,7 +12,7 @@
 
 <center>
 
-![图8-1 访问者模式的例子](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%207%20Visitor%20Pattern/8-1.png)
+![图8-1 访问者模式的例子](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%208%20Visitor%20Pattern/8-1.png)
 
 </center>
 
@@ -24,7 +24,7 @@
 
 <center>
 
-![图8-2 一般的访问者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%207%20Visitor%20Pattern/8-2.png)
+![图8-2 一般的访问者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%208%20Visitor%20Pattern/8-2.png)
 
 </center>
 
