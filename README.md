@@ -1,6 +1,6 @@
 # 软件设计模式笔记
 
-这是我关于软件设计模式部分的学习笔记。整理了各个设计
+整理了如下共计10种常用的设计模式，画出了每一种设计模式的设计类图，分析了相应的适用范围、优缺点等等。
 
 - <a href=https://github.com/Jannchie/Software-Design-Pattern-Note/blob/master/Pattern%200%20Factory%20Design%20pattern/Pattern%200%20Factory%20Design%20pattern.md> 简单工厂设计模式 </a>
 
