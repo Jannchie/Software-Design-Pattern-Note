@@ -18,7 +18,7 @@
 
 <center>
 
-![图9-1 不使用中介者](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%Mediator%20Pattern/9-1.png)
+![图9-1 不使用中介者](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%20Mediator%20Pattern/9-1.png)
 
 </center>
 
@@ -26,7 +26,7 @@
 
 <center>
 
-![图9-2 中介者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%Mediator%20Pattern/9-2.png)
+![图9-2 中介者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%20Mediator%20Pattern/9-2.png)
 
 </center>
 
@@ -36,7 +36,7 @@
 
 <center>
 
-![图9-3 一般的中介者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%Mediator%20Pattern/9-3.png)
+![图9-3 一般的中介者模式](https://raw.githubusercontent.com/Jannchie/Software-Design-Pattern-Note/master/Pattern%209%20Mediator%20Pattern/9-3.png)
 
 </center>
 
